@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona tus Pokémon</title>
+    <link rel="stylesheet" href="css/seleccion.css">
+</head>
+<body>
+    <h1>¡Selecciona tus Pokémon!</h1>
+    <h2 id="nombreJugador1"></h2><br>
+    <p id="creditosJugador1">Créditos restantes: </p>
+
+    <h3>Pokémon seleccionados:</h3>
+    <select id="pokemonsJugador1" multiple></select>
+   <button onclick="guardarPokemons()">Confirmar selección</button>
+    <!-- Campo de búsqueda -->
+    <input type="text" id="busquedaPokemon" placeholder="Buscar Pokémon..." oninput="filtrarPokemons()" />
+
+    <div id="pokemonsContainer"></div>
+
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
